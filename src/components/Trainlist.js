@@ -18,6 +18,7 @@ export default function Trainlist (){
     fetch('https://customerrest.herokuapp.com/gettrainings')
     .then(result => result.json())
     .then(data => setTrains(data))
+    console.log(trains);
   }
 
   const deleteTraining = (id) => {

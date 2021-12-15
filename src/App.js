@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Trainlist from './components/Trainlist';
 import Frontpage from './components/Frontpage';
 import Custlist from './components/Custlist';
+import Scheduler from './components/Scheduler';
 
 function App() {
   return (
@@ -24,10 +25,12 @@ function App() {
           <Link to="/">Home</Link>{' '}
           <Link to="/components/trainlist">Training list</Link>{' '}
           <Link to="/components/custlist">Customer list</Link>{' '}
+          <Link to="/components/scheduler">Training calendar</Link>{' '}
           <Routes>
             <Route exact path="/" element={<Frontpage />} />
             <Route path="/components/trainlist" element={<Trainlist />} />
             <Route path="/components/custlist" element={<Custlist />} />
+            <Route path="/components/scheduler" element={<Scheduler />} />
           </Routes>
         </div>
       </BrowserRouter>
