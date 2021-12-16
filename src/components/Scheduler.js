@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import FullCalendar, { formatDate } from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import moment from 'moment';
 
 
 export default function Scheduler (){
